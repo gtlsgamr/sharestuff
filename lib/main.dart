@@ -6,6 +6,14 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
-    return HomePage();
+    return MaterialApp(
+      title:  "Sharestuff",
+      theme: ThemeData(
+        canvasColor: Colors.black,
+        primaryColor: Colors.black,
+        accentColor: Colors.redAccent,
+      ),
+      home: HomePage(),
+    );
   }
 }
