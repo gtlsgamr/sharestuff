@@ -1,7 +1,19 @@
 import 'package:flutter/material.dart';
 
-Widget ImageBox(){
+
+
+
+
+
+
+Widget ImageBox(IconData icon){
   return Container(
-    child: Card(color: Colors.transparent, child: Icon(Icons.access_alarm, color: Colors.pink, size: 45.0,),),
+    child: Card(color: Colors.transparent, 
+    child: Container(
+      child: Image.network(
+  'https://picsum.photos/250?image=9',
+)
+,
+    ),),
   );
 }

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:sharestuff/toppage.dart';
 
+import 'categories.dart';
+import 'trending.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -28,8 +31,8 @@ class _HomePageState extends State<HomePage> {
             )),
         body: TabBarView(children: <Widget>[
           TopPage(),
-          Text("DIE"),
-          Text("NOW"),
+          Trending(),
+          Categories(),
         ]),
       ),
     );
